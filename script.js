@@ -40,8 +40,8 @@ document.querySelector("form").addEventListener("submit", (e) => {
     return;
   }
 
-  if (inputYear < 1990 || inputYear > currentYear) {
-    alert(`Year must be between 1990 and ${currentYear}.`);
+  if (inputYear < 1900 || inputYear > currentYear) {
+    alert(`Year must be between 1900 and ${currentYear}.`);
     return;
   }
 

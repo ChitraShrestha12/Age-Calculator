@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 94%);
+}
+
+main {
+  margin: 15px;
+  padding: 34px 40px;
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+  border-bottom-right-radius: 120px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  gap: 20px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: hsl(0, 2%, 37%);
+}
+
+.input-box input {
+  width: 100px;
+  height: 40px;
+  padding: 22px 14px;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 6px;
+  font-size: 20px;
+
+  font-weight: 700;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid hsl(259, 100%, 65%);
+}
+
+input:hover {
+  border: 1px solid hsl(259, 100%, 65%);
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: hsl(0deg 9.09% 78.87%);
+}
+
+.line-container {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  flex: 1;
+  height: 2px;
+  background-color: hsl(0, 2%, 70%);
+  border: none;
+  width: 370px;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  background-color: hsl(259, 100%, 65%);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 0%);
+}
+
+.result-box {
+  margin: 20px 0;
+}
+
+.result > p {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0.5em 0;
+  font-style: italic;
+}
+
+.result p span {
+  color: hsl(259, 100%, 65%);
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 610px) {
+  main {
+    margin: 15px;
+    padding: 25px 30px;
+    border-bottom-right-radius: 100px;
+  }
+
+  .input-group {
+    gap: 15px;
+  }
+  .input-box input {
+    width: 90px;
+    height: 40px;
+    padding: 14px 10px;
+    font-size: 16px;
+  }
+  .input-box input {
+    width: 91px;
+    height: 40px;
+    padding: 14px 10px;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .line {
+    width: 100%;
+    margin-block: 20px;
+  }
+
+  button {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 40%;
+  }
+
+  button img{
+    padding: 5px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  main {
+    margin: 10px;
+    padding: 15px 20px;
+    border-bottom-right-radius: 70px;
+  }
+
+  .input-group {
+    gap: 10px;
+  }
+  .input-box input {
+    width: 60px;
+    height: 30px;
+    padding: 10px 8px;
+    font-size: 14px;
+  }
+
+  .line {
+    width: 100%;
+    margin-block: 15px;
+  }
+
+  button {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 40%;
+  }
+
+  button img{
+    padding: 5px;
+    width: 100%;
+  }
+}
